@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, use-scalebe=no">
+		<link rel="stylesheet" type="text/css" href="_css/estilo01.css">
+		<title>Home</title>
+		<script type="text/javascript">
+			function mostraMenu () {
+				var obj = document.getElementById('menu-drop');
+				if (obj.style.display == 'none') {
+					obj.style.display = 'block';
+					var cabecalho = document.getElementById('cabecalho');
+						cabecalho.style.width = '40%';
+					var label = document.getElementById('titulo');
+						label.style.display = 'none';
+					/*var btn = document.getElementById('menu');
+						btn.style.background = 'white';
+						btn.style.color = 'black';*/
+				} else{
+					obj.style.display = 'none';
+					var cabecalho = document.getElementById('cabecalho');
+						cabecalho.style.width = '100%';
+					var label = document.getElementById('titulo');
+						label.style.display = 'block';
+					/*var btn = document.getElementById('menu');
+						btn.style.background = 'black';
+						btn.style.color = 'white';*/
+				};
+			}
+		</script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		<link  rel = " stylesheet "  href = "_css/material.css " > 
+<script  src = " _js/material.js " > </script> 
+			<link  rel = " stylesheet "  href = " //fonts.googleapis.com/icon?family =Material+Icons " >	
+	</head>
+	<body>
+		<header id="cabecalho" name="n-cabecalho">
+			<label id="titulo">HOME</label>	
+			<button id="menu" onclick="mostraMenu()">MENU</button>
+		</header>
+
+		<ul id="menu-drop" name="n-menu-drop">
+			<li><a href="">opção 01</a></li>
+			<li><a href="">opção 02</a></li>
+			<li><a href="">opção 03</a></li>
+			<li><a href="">opção 04</a></li>
+			<li><a href="">opção 05</a></li>
+		</ul>
+		<section class="prox-trens"  id="prox-trens" name="n-prox-trens">
+			<table  class="tabela-pt" id="tabela-pt">
+				<caption>Próximos trens</caption>
+				<tr>
+					<td>J066</td>
+					<td><a href="">!</a></td></td>
+				</tr>
+				<tr>
+					<td>J065</td>
+					<td><a href="">!</a></td></td>
+				</tr>
+				<tr>
+					<td>T456</td>
+					<td><a href="">!</a></td></td>
+				</tr>
+				<tr>
+					<td>T009</td>
+					<td><a href="">!</a></td></td>
+				</tr>
+			</table>
+		</section>
+		<section class="prox-trens" id="trens-patio" name="n-trens-patio">
+			<table class="tabela-pt" id="tabela-tp">
+				<caption>Trens no patio</caption>
+				<tr>
+					<td>J066</td>
+					<td><a href="">!</a></td></td>
+				</tr>
+				<tr>
+					<td>J065</td>
+					<td><a href="">!</a></td></td>
+				</tr>
+				<tr>
+					<td>T456</td>
+					<td><a href="">!</a></td></td>
+				</tr>
+				<tr>
+					<td>T009</td>
+					<td><a href="">!</a></td></td>
+				</tr>
+			</table>
+		</section>
+	</body>
+</html>
